@@ -267,10 +267,14 @@
                   </tr>
                 </thead>
                 <tbody>
+                   <php 
+                    $no = 0;             
+                   ?>
                      @foreach ($data as $item)  <tr>
                       
-               
-                    <td scope="row">{{$item->id}}</td>
+                      
+                    <td scope="row">$no++</td>
+                    <!-- <td scope="row">{{$item->id}}</td> -->
                     <td scope="row"><b>{{$item->tertuju}}</b></td>
                     <td>{{$item->namasuratklr}}</td>
                     <td>{{$item->perihal}}</td>
